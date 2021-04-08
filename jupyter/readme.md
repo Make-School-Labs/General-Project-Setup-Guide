@@ -62,7 +62,7 @@ Anaconda is a very popular Python distribution software. It comes with tons of s
 
     `source ~/.zshrc`
 
-Like the other methods, open the jupyter notebook with:
+Like the other methods, open the jupyter notebook with this line in your terminal:
 
 `jupyter notebook`
 
