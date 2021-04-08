@@ -101,8 +101,13 @@ If you don’t want any installation and would like to try the Notebook with you
 [Running  Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/running.html#running)
 
 [Official Python Download](https://www.python.org/downloads/)
+
 <https://jupyter.readthedocs.io/en/latest/tryjupyter.html>
+
 <https://www.anaconda.com/products/individual>
+
 <https://jupyter.readthedocs.io/en/latest/install.html>
+
 <https://jupyter.readthedocs.io/en/latest/tryjupyter.html#id1>
+
 <https://towardsdatascience.com/jupyter-notebook-in-visual-studio-code-3fc21a36fe43>
