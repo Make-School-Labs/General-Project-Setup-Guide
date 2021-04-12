@@ -104,17 +104,57 @@ Follow these steps to install dependecies and dev dependencies necessary for you
 
   ![What format for config file](../assests/json-format-eslint.png)
 
-  * Finally, the prompt will ask for permission to install the dependencies that support the configuration we have chosen.
+  * Finally, the prompt will ask for permission to install the dependencies that support the configuration you have chosen.
 
   ![Eslint Dependencies](../assests/eslint-dependencies.png)
 
 * At the end of configuration, a config file `.eslint.json` file will be created for you in your project directory.
 
+_**Why install and configure eslint?** We want to make sure that we are writing clean, readable and industry standard code. Eslint is a very popular Javascript linting tool and it will help make sure our coding style falls in line with some standards._
+
 ## Enable Eslint on VsCode
 
-## Express Application Generator
+If you use a VsCode, you can install and enable the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) to help you with linting checks while writing code.
+Squiggly red lines indicate a problem in coding style and squiggly yellow lines indicate a warning. The extension helps with quick fixes for problems it detects.
 
-## Running Scripts
+![code check and fix](../assests/code-check-and-fix.png)
+
+## Start your Project and Run Scripts
+
+To start your project, create an entry file, `index.js`, that would start up your express server. You can give whatever name you want to this file. It is common to see developers name it `app.js`.
+
+ In the file, you can start with following starter code:
+
+```js
+const express = require('express');
+
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}!`);
+});
+
+// Run app, then load http://localhost:port in a browser to see the output.
+```
+
+To run the app, go to your termainal and run the command `node index.js`. You should see the following output:
+
+```shell
+Example app listening on port 3000!
+```
+
+Open your browser and load <http://localhost:3000> to see the `Hello World` output.
+
+Well done! You have successfully setup a Node.js project! Happy Coding!!
+
+## Nodemon and Dot Env
+
+## Express Application Generator
 
 ## Other References
 
