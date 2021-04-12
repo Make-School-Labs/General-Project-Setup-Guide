@@ -7,8 +7,17 @@ This guide will discuss how to setup Jupyter Notebook on your local machine.
 ## Installation
 
 Jupyter works with the Python Language server so make sure to install python on your system.
+To check if Python is installed on your machine, open your terminal and type:
 
-### Install with Pip
+```shell
+python --version
+```
+
+If you do have Python installed, you would get an output displaying the currently installed version of Python on your machine.
+
+If you don't, no worries! Go through the instructions [here](###installing-with-anaconda) on how to install Jupyter with Anaconda. Installing Anaconda means you are getting a version of Python installed.
+
+## Install with Pip
 
 For exisiting Python users, you could install jupyter with Python's package manager, pip.
 
@@ -30,27 +39,29 @@ To run the notebook, type the following command into your
 jupyter notebook
 ```
 
-### Using Anaconda
+## Install with Anaconda
 
 For new users to Python, it's best to use Anaconda to install Jupyter notebook.
 
 Anaconda is a very popular Python distribution software. It comes with tons of scientific packages(including Python, Jupyter Notebook) for computing and data science.
 
-#### To install Anacoda with the Installer
+### Install Anacoda with the Installer
 
 * Download Anaconda installer [here](https://www.anaconda.com/products/individual)
 * Install the Anaconda on your machine; follow the instructions on the download page
 * Now you have Anaconda installed, run jupyter notebook with `jupyter notebook`
 
-#### To install Anacoda with Homebrew, use the following steps from your command line
+### Install Anacoda with Homebrew
+
+Use the following steps from your command line:
 
 * Install anaconda
 
     `brew install --cask anaconda`
 * Set your anaconda path. Edit your ~/.zshrc file.
-  * Open your .zshrc file with vim editor
+  * Open your .zshrc file with vscode editor
 
-    `vim ~/.zshrc`
+    `code ~/.zshrc`
   * Add the following to the top of the file:
 
     `export PATH="/usr/local/anaconda3/bin:$PATH"`
