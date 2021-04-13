@@ -119,7 +119,7 @@ Squiggly red lines indicate a problem in coding style and squiggly yellow lines 
 
 ![code check and fix](../assests/code-check-and-fix.png)
 
-## Start your Project and Run Scripts
+## Start your Project
 
 To start your project, create an entry file, `index.js`, that would start up your express server. You can give whatever name you want to this file. It is common to see developers name it `app.js`.
 
@@ -150,11 +150,84 @@ Example app listening on port 3000!
 
 Open your browser and load <http://localhost:3000> to see the `Hello World` output.
 
+## Run Scripts
+
+You can define named scripts in your `package.json` file and execute them with [NPM run script](https://docs.npmjs.com/cli/v7/commands/npm-run-script) commands.
+
+These scripts run commands from the `package.json` `scripts` object. This is commonly used to automate parts of the development cycle like running tests.
+
+Include a start script to your `package.json` file. It will execute the command `node index.js` that starts the server.
+
+```json
+    "scripts": {
+    "start": "node index.js"
+  },
+```
+
+Your `package.json` file should look like this now:
+
+![start script](../assests/start-script.png)
+
+Now, in your terminal, when you run the command `npm start`, you should get the same output as before when you ran `node index.js`.
+
+## Nodemon and Dotenv
+
+## Nodemon
+
+Starting and restarting your server each time you make a change can be a chore. Luckily, `nodemon` helps with automatically restarting your server when it detects a change in in the files in your project directory.
+
+* Run `npm install nodemon --save-dev`to install `nodemon` as a development dependency
+* include `nodemon index.js` as an npm run script in your `package.json`.
+
+```json
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+```
+
+To run the script type `npm run dev` in your terminal.
+
+## Dotenv
+
+The `dotenv` package helps with storing environment variables. `Dotenv` helps load environment variables from a `.env` file into `process.env`.
+
+* Run `npm install dotenv` to install it as a dependency.
+* Create a `.env` file in the root of your project directory.
+* In your `.env` file, include this:
+
+```js
+PORT=3000
+```
+
+* include the `dotenv` package to your `index.js` file
+
+```js
+// require the dotenv package
+require('dotenv').config();
+// load the port variable fro .env file
+const port = process.env.PORT;
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}!`);
+});
+
+```
+
 Well done! You have successfully setup a Node.js project! Happy Coding!!
 
-## Nodemon and Dot Env
+## Set up with Express Application Generator
 
-## Express Application Generator
+You can easily use the `Express Application Generator` to quickly create an application skeleton for your project.
+
+Go through the guide [here](https://expressjs.com/en/starter/generator.html) to set it up.
 
 ## Other References
 
@@ -165,3 +238,7 @@ Well done! You have successfully setup a Node.js project! Happy Coding!!
 <https://docs.npmjs.com/specifying-dependencies-and-devdependencies-in-a-package-json-file>
 
 <https://expressjs.com/>
+
+<https://docs.npmjs.com/cli/v7/commands/npm-run-script>
+
+<https://nodejs.org/docs/latest/api/process.html#process_process_env>
