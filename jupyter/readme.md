@@ -15,7 +15,7 @@ python --version
 
 If you do have Python installed, you would get an output displaying the currently installed version of Python on your machine.
 
-If you don't, no worries! Go through the instructions [here](###installing-with-anaconda) on how to install Jupyter with Anaconda. Installing Anaconda means you are getting a version of Python installed.
+If you don't, no worries! Go through the instructions [here](##installing-with-anaconda) on how to install Jupyter with Anaconda. Installing Anaconda means you are getting a version of Python installed.
 
 ## Install with Pip
 
@@ -78,7 +78,7 @@ Like the other methods, open the jupyter notebook with this line in your termina
 `jupyter notebook`
 
 You should see an ouput in your terminal that looks like this:
-![jupyter-terminal-output](../assests/jupyter-notebook.png)
+![jupyter-terminal-output](./assests/jupyter-notebook.png)
 
 ## Use Jupyter Notebook in VsCode
 
@@ -89,7 +89,7 @@ Follow these steps to use Jupyter Notebook In VsCode
 * **Installation**:  Open your VsCode IDE. Search for [`Python`](https://marketplace.visualstudio.com/items?itemName=ms-python.python) in the list of extensions and click on install.
 
 If you already have it installed, check to see if you need to update it.
-![Python Extension](../assests/vscode-python.png)
+![Python Extension](./assests/vscode-python.png)
 
 * **Create a new Notebook**:
 
@@ -97,7 +97,7 @@ If you already have it installed, check to see if you need to update it.
 
   * Search for `Jupyter: Create New Blank Notebook`. VsCode will start a Jupyter server locally and display the notebook in the editor.
 
-  ![Jupyter Notebook in VsCode](../assests/hello-world-vscode-jupyter.png)
+  ![Jupyter Notebook in VsCode](./assests/hello-world-vscode-jupyter.png)
 
 Jupyter Notebook in VsCode offers so many features:
 

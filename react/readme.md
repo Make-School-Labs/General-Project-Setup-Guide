@@ -1,7 +1,7 @@
 # Set Up a React Project
 
 Setting up a React project has been made really simple with the `Create React App` executable command.
-To set up a React project, run the following command in your terminal `npx create-react-app <name-of-your-react-project>`. 
+To set up a React project, run the following command in your terminal `npx create-react-app <name-of-your-react-project>`.
 
 For example:
 `npx create-react-app todo-app`

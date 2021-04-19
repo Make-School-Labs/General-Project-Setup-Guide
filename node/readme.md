@@ -47,7 +47,7 @@ The `npm init` command creates a **package.json** file in your appliaction. Foll
 `npm init` command prompts you for a number of things (name of yur application, version, entry point file etc.). For now, accept the defaults by pressing the enter key at every prompt.
 
 You can open the package.json file with your code editor `code package.json` to see the defaults that you accepted. It would look like so:
-![Initialise package.json](../assests/packagejson-init.png)
+![Initialise package.json](./assests/packagejson-init.png)
 
 **Note**: You can accept all defaults automatically by running `npm init -y`.
 
@@ -76,37 +76,37 @@ Follow these steps to install dependecies and dev dependencies necessary for you
 * A set of prompts will be brought up for you, let's go through each of them:
   * First, `How would you like to use Eslint`. Use your arrow key to choose the best answer for your scenario and press enter key.
 
-  ![check syntax](../assests/check-syntax-eslint.png)
+  ![check syntax](./assests/check-syntax-eslint.png)
   * Next, `What type of modules does your project use?`. Use the arrow key to choose the best for your project and press enter.
 
-  ![module type](../assests/module-type-eslint.png)
+  ![module type](./assests/module-type-eslint.png)
   * `Which framework does your project use?`. With your arrow key choose `None of these` and press enter.
 
-  ![Which Framework](../assests/which-framework.png)
+  ![Which Framework](./assests/which-framework.png)
 
   * `Does your project use Typescript`. Use the arrow key to choose the best for your project and press enter.
 
-  ![Does your project use TypeScript](../assests/typescript-eslint.png).
+  ![Does your project use TypeScript](./assests/typescript-eslint.png).
 
   * `Where does your code run?`. We will follow the prompt and press the **a** key to select all options and press enter.
 
-  ![Where does your code run](../assests/where-does-code-run-eslint.png)
+  ![Where does your code run](./assests/where-does-code-run-eslint.png)
 
   * `How would you like to define a style for your project?`. We will choose to `Use a popular style guide` and press enter.
 
-  ![Use a popular style guide](../assests/style-guide-eslint.png)
+  ![Use a popular style guide](./assests/style-guide-eslint.png)
 
   * `Which style guide do you want you follow?`. We will choose the `Airbnb style guide` and press enter.
 
-  ![Airbnb Style guide](../assests/airbnb-style-eslint.png)
+  ![Airbnb Style guide](./assests/airbnb-style-eslint.png)
 
   * `What format do you want your config file to be in?`. We will choose `JSON` and press enter.
 
-  ![What format for config file](../assests/json-format-eslint.png)
+  ![What format for config file](./assests/json-format-eslint.png)
 
   * Finally, the prompt will ask for permission to install the dependencies that support the configuration you have chosen.
 
-  ![Eslint Dependencies](../assests/eslint-dependencies.png)
+  ![Eslint Dependencies](./assests/eslint-dependencies.png)
 
 * At the end of configuration, a config file `.eslint.json` file will be created for you in your project directory.
 
@@ -117,7 +117,7 @@ _**Why install and configure eslint?** We want to make sure that we are writing 
 If you use a VsCode, you can install and enable the [Eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) to help you with linting checks while writing code.
 Squiggly red lines indicate a problem in coding style and squiggly yellow lines indicate a warning. The extension helps with quick fixes for problems it detects.
 
-![code check and fix](../assests/code-check-and-fix.png)
+![code check and fix](./assests/code-check-and-fix.png)
 
 ## Start your Project
 
@@ -166,7 +166,7 @@ Include a start script to your `package.json` file. It will execute the command 
 
 Your `package.json` file should look like this now:
 
-![start script](../assests/start-script.png)
+![start script](./assests/start-script.png)
 
 Now, in your terminal, when you run the command `npm start`, you should get the same output as before when you ran `node index.js`.
 
