@@ -10,15 +10,16 @@ Make sure to have the latest stable version of Python on your system. If you don
 
 To setup a virtual environment:
 
-* `mkdir <your-project-name>` to create a project directory.
+* In your terminal run the command `mkdir <your-project-directory>` to create a new project directory.
 * Navigate to your project directory `cd <your-project-directory>`.
-* Python3 comes pre built with the `venv` module to create virtual environments. We create a virutal environment by running the command `python3 -m venv /path/to/new/virtual/environment`.
+
+* Note: Python3 comes pre built with the `venv` module to create virtual environments. We create a virutal environment by running the command `python3 -m venv /path/to/new/virtual/environment`.
 * Navigate to your project directory in your terminal and run this command `python3 -m venv venv`. It is standard to have a venv folder
  A new vitrual environment will be created in a folder called venv
 * The second argument is the location to create the virtual environment.
  Generally, you can just create this in your project and call it venv. venv will create a virtual python installation in the venv folder
 
-Activate the environment
+Activate the environment:
 
 * run the command `source venv/bin/activate`, `. venv/bin/activate` in  your terminal to activate the virtual environment.
 Note: this works for `zsh` and `bash` terminals. If you use any other please visit [here](https://docs.python.org/3/library/venv.html) to see guide on how to activate a virtual environment
@@ -36,7 +37,7 @@ Note: this works for `zsh` and `bash` terminals. If you use any other please vis
 * Now we can install packages etc
 * Make sure that your pip when you do `pip --version` is for a python3 version.
 
-To deactivate, type `deactivate`
+To deactivate, type `deactivate` in your terminal.
 
 Install Flask
 
@@ -44,7 +45,7 @@ Install Flask
 
 ## Building a Flask Server
 
-Just save it as hello.py or something similar. Make sure to not call your application flask.py because this would conflict with Flask itself.
+Create a new file and save it as hello.py or something similar. Make sure to not call your application flask.py because this would conflict with Flask itself. We will call our file `server.py`.
 
 * create a new file `server.py`
 
@@ -69,8 +70,6 @@ To run the application you can either use the flask command or python’s -m swi
 
 * `export FLASK_ENV=development`
 * Detect changes without restarting the server. etc.(lazy loading)
-
-Templates, static folder
 
 ## Other References
 
