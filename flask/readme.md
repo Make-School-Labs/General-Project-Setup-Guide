@@ -71,6 +71,11 @@ To run the application you can either use the flask command or python’s -m swi
 * `export FLASK_ENV=development`
 * Detect changes without restarting the server. etc.(lazy loading)
 
+## Linting
+
+<https://code.visualstudio.com/docs/python/linting#_enable-linters>
+
+<https://realpython.com/python-code-quality/>
 ## Other References
 
 <https://flask.palletsprojects.com/en/1.1.x/>
