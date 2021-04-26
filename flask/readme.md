@@ -49,7 +49,7 @@ If you don't, no worries! Go through this guideline [here](https://github.com/Ma
 
 Pip is the package installer for `Python`. We can use `pip3` to install packages from the `Python` package Index - [PyPI](https://pypi.org/) and other indexes.
 
-* Run `pip3 install Flask` to install flask so you can start using it in your project. 
+* Run `pip3 install Flask` to install flask so you can start using it in your project.
 
   You will get a prompt that looks like this on successful install:
 

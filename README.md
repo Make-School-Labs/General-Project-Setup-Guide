@@ -1,2 +1,11 @@
 # General-Project-Setup-Guide
-Guide for starting and setting up projects from scratch
+
+Guide for starting and setting up and deploying projects.
+
+| Project | Guide |
+| ----------- | ----------- |
+| Django | [Django set up guide](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/django) |
+| Flask | [Flask set up guide](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/flask) |
+|Jupyter Notebook|[Getting Started with Jupyter Notebook](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/jupyter)|
+|Node/Express|[Setting up a Node/Express Project](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/node)|
+|React|[Set up a React Project](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/react)|
