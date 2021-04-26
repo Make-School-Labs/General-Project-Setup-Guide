@@ -1,6 +1,6 @@
 # General-Project-Setup-Guide
 
-Guide for starting and setting up and deploying projects.
+Guides for setting up and deploying projects.
 
 | Project | Guide |
 | ----------- | ----------- |
