@@ -1,4 +1,4 @@
-# Deploying Apss on Heroku
+# Deploying Apps on Heroku
 
 Heroku is a platform as a service (PaaS) that enables developers to deploy apps for free using a full range of free cloud services available through the Heroku platform and ecosystem.
 
