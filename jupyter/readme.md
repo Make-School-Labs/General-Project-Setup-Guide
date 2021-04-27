@@ -10,7 +10,7 @@ Jupyter works with the Python Language server so make sure to install python on 
 To check if Python is installed on your machine, open your terminal and type:
 
 ```shell
-python --version
+python3 --version
 ```
 
 If you do have Python installed, you would get an output displaying the currently installed version of Python on your machine.

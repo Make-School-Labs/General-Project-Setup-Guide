@@ -6,7 +6,7 @@ Flask framework is a simplistic and micro Python framework that is commonly used
 
 Make sure to have an actively supported version (>=3.6) of Python 3 on your system.
 To check if Python is installed on your system, open your terminal and type:
-`python --version`
+`python3 --version`
 
 If you do have Python installed, you would get an output displaying the currently installed version of Python on your machine.
 
