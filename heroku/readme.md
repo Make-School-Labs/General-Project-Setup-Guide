@@ -68,11 +68,11 @@ Login to Heroku CLI with the command `heroku login`.
 
 * Once you are logged in, you will get a prompt both on your browser and terminal
 
-On the browser:
+    On the browser:
 
     ![Logged In](./assests/heroku-cli-logged-in.png)
 
-And on your command line:
+    And on your command line:
 
     ```shell
     ➜  ~ heroku login
@@ -82,12 +82,12 @@ And on your command line:
     Logging in... done
     Logged in as youremail@email.com
     ```
+
 You are now logged in!! Let's get on to deploying your app now!
 
 ## Deploying your Apps
 
- To deploy various apps on Heroku please follow these official guides thoroughly:
-
+ To deploy apps on Heroku please follow these official guides for your specifc use case:
  | App     | Guide |
 | ----------- | ----------- |
 | Nodejs    | <https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true>      |

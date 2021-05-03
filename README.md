@@ -9,3 +9,4 @@ Guides for setting up and deploying projects.
 |Jupyter Notebook|[Getting Started with Jupyter Notebook](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/jupyter)|
 |Node/Express|[Setting up a Node/Express Project](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/node)|
 |React|[Set up a React Project](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/react)|
+| Heroku | [Setting up and Deploying Apps on Heroku](https://github.com/Make-School-Labs/General-Project-Setup-Guide/tree/main/heroku)
