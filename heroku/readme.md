@@ -92,6 +92,7 @@ You are now logged in!! Let's get on to deploying your app now!
 | ----------- | ----------- |
 | Nodejs    | <https://devcenter.heroku.com/articles/getting-started-with-nodejs?singlepage=true>      |
 | Python - Django   |   <https://devcenter.heroku.com/articles/getting-started-with-python?singlepage=true>      |
+| General Deployment with git | <https://devcenter.heroku.com/articles/git> |
 
 ## Other References
 
