@@ -39,7 +39,7 @@ git push -u origin gh-pages
 
 Take note of the site address your content was pubilshed at.
 
-It will typically follow the format  - <httpa://{your-githubusername}.github.io/{name-of-your-repository}/>.
+It will typically follow the format  - <https://{your-githubusername}.github.io/{name-of-your-repository}/>.
 
 Navigate to the site url published for you and viola! you have your content up and publicly visible.
 
