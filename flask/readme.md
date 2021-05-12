@@ -94,7 +94,7 @@ You should get an output that looks like this:
 
 ![flask-start-serve](./assests/flask-start-server.png)
 
-Visit the URL shown on your terminal from your browser amd you should see a 'Hello World!' text on display.
+Visit the URL shown on your terminal - <http://127.0.0.1:5000/> from your browser and you should see a 'Hello World!' text on display.
 
 ## Turn on debug mode
 

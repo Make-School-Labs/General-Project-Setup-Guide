@@ -58,10 +58,16 @@ Use the following steps from your command line:
 * Install anaconda
 
     `brew install --cask anaconda`
-* Set your anaconda path. Edit your ~/.zshrc file.
-  * Open your .zshrc file with vscode editor
+* Set your anaconda path. Edit your ~/.zshrc or ~/.bashrc file.
+  * Open your .zshrc or .bashrc file with vscode editor
+
+    For zsh:
 
     `code ~/.zshrc`
+
+    For bash:
+
+    `code ~/.bashrc`
   * Add the following to the top of the file:
 
     `export PATH="/usr/local/anaconda3/bin:$PATH"`
@@ -71,7 +77,11 @@ Use the following steps from your command line:
 
     You can either close the terminal or load the path configuration by running:
 
+    For zsh:
     `source ~/.zshrc`
+
+    For bash:
+    `source ~/.bashrc`
 
 Like the other methods, open the jupyter notebook with this line in your terminal:
 
@@ -106,6 +116,8 @@ You can execute cells with code or have them with markdowm, debug a notebook, yo
 ## Try in your Browser without installing
 
 If you don’t want any installation and would like to try the Notebook with your browser instead, you can click [here](https://jupyter.org/try).
+
+## FAQ
 
 ## Other References
 
