@@ -21,25 +21,25 @@ If you don't, no worries! Go through this guideline [here](https://github.com/Ma
 
     Python3 comes pre built with the `venv` module to create virtual environments. We create a virutal environment by running the command `python3 -m venv /path/to/new/virtual/environment`.
 
-  * Run the command `python3 -m venv venv`.
- A new vitrual environment will be created in a folder called `venv`. The venv module will create a virtual python installation in the venv folder.
+  * Run the command `python3 -m venv env`.
+ A new vitrual environment will be created in a folder called `env`. The venv module will create a virtual python installation in the env folder.
 
 * Activate the environment:
 
-  * Run the command `source venv/bin/activate`, `. venv/bin/activate` in  your terminal to activate the virtual environment.
+  * Run the command `source env/bin/activate` or `. env/bin/activate` in  your terminal to activate the virtual environment.
 
-    **Note:** this works for `zsh` and `bash` terminals. If you use any other please see list below or visit [here](https://docs.python.org/3/library/venv.html) to see guide on how to activate a virtual environment on your particular shell.
+    **Note:** this works for `zsh` and `bash` terminals. If you use any other please see list below or visit [here](https://docs.python.org/3/library/venv.html) or see the table below on how to activate a virtual environment on your particular shell.
 
     | Shell    | Command |
     | ----------- | ----------- |
-    | bash/zsh     | `$ source venv/bin/activate`|
-    |fish | `$ source venv/bin/activate.fish`|
-    |csh/tcsh| `$ source venv/bin/activate.csh`|
-    |PowerShell Core | `$ venv/bin/Activate.ps1`|
-    |cmd.exe | `C:\> venv\Scripts\activate.bat`|
-    |PowerShell | `PS C:\> venv\Scripts\Activate.ps1`|
+    | bash/zsh     | `$ source env/bin/activate`|
+    |fish | `$ set VIRTUAL_ENV`|
+    |csh/tcsh| `$ source env/bin/activate.csh`|
+    |PowerShell Core | `$ env/bin/Activate.ps1`|
+    |cmd.exe | `C:\> env\Scripts\activate.bat`|
+    |PowerShell | `PS C:\> env\Scripts\Activate.ps1`|
 
-    Once your environment is activated, your prompt will now have an `venv` prefix that may look as follows:
+    Once your environment is activated, your prompt will now have an `env` prefix that may look as follows:
 
     ![flask-activate-environment](./assests/flask-activate-environment.png)
 
@@ -125,6 +125,38 @@ The Python extension for VsCode is a nice to have tool. To install it:
 
 * Click on install and you would have it enabled. Check [here](https://code.visualstudio.com/docs/languages/python) for more about the features it offers.
 
+## Project Layout - Packages and Blueprints
+
+The set up above helps to get started on a simple flask web server. Most apps you would build with flask will grow to be larger than having just a single `app.py` file.
+
+As your application grows, you need to set up a structure or layout that will help with easy maintenance. Flask doesn't enforce any project layout, however there are best practices. We will discuss structuring your flask project as a package.
+
+In this method, you can define your app as a package(grouping modules) and import it as same. The method will instruct us to break our code into separate files based on the logic they implement.
+
+Let's get started!
+
+* Your Project layout will look like this at the end
+
+```md
+📦Root-folder
+ ┣ 📂flask-app
+ ┃ ┣ 📂static
+ ┃ ┃ ┣ 📂img
+ ┃ ┃ ┗ 📜style.css
+ ┃ ┣ 📂templates
+ ┃ ┣ 📜__init__.py
+ ┃ ┣ 📜config.py
+ ┃ ┣ 📜database.db
+ ┃ ┣ 📜forms.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜routes.py
+ ┃ ┗ 📜utils.py
+ ┣ 📜.env
+ ┣ 📜README.md
+ ┣ 📜app.py
+ ┗ 📜requirements.txt
+```
+
 ## Other References
 
 <https://flask.palletsprojects.com/en/1.1.x/>
@@ -132,3 +164,6 @@ The Python extension for VsCode is a nice to have tool. To install it:
 <https://docs.python.org/3/library/venv.html>
 
 <https://flask.palletsprojects.com/en/1.1.x/quickstart/>
+
+[Working with BluePrints](https://flask.palletsprojects.com/en/2.0.x/blueprints/)
+[Large Applications as Packages](https://flask.palletsprojects.com/en/2.0.x/patterns/packages/)
