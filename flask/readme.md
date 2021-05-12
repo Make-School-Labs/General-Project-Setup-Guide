@@ -179,7 +179,6 @@ There are also other files and folders. The table below shows a basic run down o
 | `app.py` | This is the file that is run to start up a development server |
 | `requirements.txt` | This file lists the package dependencies so that it is easy to regenerate an identical virtual environment on a another system |
 
-
 Your project might require some additional files specific to its context. The files are folders shown here are the common ones you will find in most Flask applications.
 
 ### BluePrints
