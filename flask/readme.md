@@ -129,41 +129,74 @@ The Python extension for VsCode is a nice to have tool. To install it:
 
 The set up above helps to get started on a simple flask web server. Most apps you would build with flask will grow to be larger than having just a single `app.py` file.
 
-As your application grows, you need to set up a structure or layout that will help with easy maintenance. Flask doesn't enforce any project layout, however there are best practices. We will discuss structuring your flask project as a package.
+As your application grows, you need to set up a structure or layout that will help with easy maintenance and navigation. Flask doesn't enforce any project layout, however there are best practices. We will discuss structuring your flask project as a package.
 
-In this method, you can define your app as a package(grouping modules) and import it as same. The method will instruct us to break our code into separate files based on the logic they implement.
+In this method, you can define your app as a package and import it as same. The method will instruct us to break our code into separate files and folders based on the logic they implement.
 
-Let's get started!
-
-* Your Project layout will look like this at the end
+The illustration below shows the basic layout:
 
 ```md
 📦Root-folder
- ┣ 📂flask-app
- ┃ ┣ 📂static
- ┃ ┃ ┣ 📂img
- ┃ ┃ ┗ 📜style.css
+ ┣ 📂 your-app
+ ┃ ┣ 📂 static
  ┃ ┣ 📂templates
  ┃ ┣ 📜__init__.py
  ┃ ┣ 📜config.py
- ┃ ┣ 📜database.db
  ┃ ┣ 📜forms.py
  ┃ ┣ 📜models.py
- ┃ ┣ 📜routes.py
- ┃ ┗ 📜utils.py
+ ┃ ┗ 📜routes.py
+ ┣ 📂 env
+ ┣ 📂 tests
+ ┃ ┗ 📜__init__.py
  ┣ 📜.env
+ ┣ 📜__init__.py
  ┣ 📜README.md
  ┣ 📜app.py
+ ┣ 📜.gitignore
  ┗ 📜requirements.txt
 ```
 
+The structure above has three main top levels:
+
+* `app`: Your flask application stays is contained in this package
+* `env`: contains the Python virtual environment
+* `tests`: Test files are contained in this package
+
+There are also other files and folders. The table below shows a basic run down of these files and folders:
+
+| File/Folder | Description |
+| ----------- | ----------- |
+| `/app/static` | This directory contains the public CSS, JavaScript, images and other files that you want to make public via your app. It is accessible from yourapp.com/static/ by default. |
+| `/app/templates` | This folder contains file templates e.g. html templates |
+| `/app/_init_.py` | This file contains code that tells Python that this folder should be treated as a package. It also contains code that creates the Flask instance |
+| `/app/config.py` | This file contains the configuration variables that your app's environment defines or depends on |
+| `/app/forms.py` | This is where you define the form classes for your application(if you use forms in your templates) |
+| `/app/models.py` | This is where you define the models of your application. |
+| `/app/routes.py` | This is where the routes for application is defined |
+| `/test/_init_.py` | This file contains code that tells Python that this folder should be treated as a package|
+| `.env` | This file is defines the environment variables that the `config.py` module uses. |
+| `__init__.py` | This file contains code that tells Python that this folder should be treated as a package |
+| `app.py` | This is the file that is run to start up a development server |
+| `requirements.txt` | This file lists the package dependencies so that it is easy to regenerate an identical virtual environment on a another system |
+
+
+Your project might require some additional files specific to its context. The files are folders shown here are the common ones you will find in most Flask applications.
+
+### BluePrints
+
+Blueprints are a great way to organise projects into distinct components. They come in handy when you application grows large and has a lot of related components.
+Check this guide [here](https://flask.palletsprojects.com/en/2.0.x/blueprints/) on how to structure your projects with Blueprints.
+
 ## Other References
+
+[Working with BluePrints](https://flask.palletsprojects.com/en/2.0.x/blueprints/)
+
+[Large Applications as Packages](https://flask.palletsprojects.com/en/2.0.x/patterns/packages/)
+
+[Official Flask Documentation for Project Layout](https://flask.palletsprojects.com/en/2.0.x/tutorial/layout/)
 
 <https://flask.palletsprojects.com/en/1.1.x/>
 
 <https://docs.python.org/3/library/venv.html>
 
 <https://flask.palletsprojects.com/en/1.1.x/quickstart/>
-
-[Working with BluePrints](https://flask.palletsprojects.com/en/2.0.x/blueprints/)
-[Large Applications as Packages](https://flask.palletsprojects.com/en/2.0.x/patterns/packages/)
